@@ -27,6 +27,10 @@ stage("Deploy") {
 	  
 	}
 }
+stage("CloudDeploy") {
+   steps { clouddeploy()
+         }
+}	
 }
 }
 // steps
@@ -45,4 +49,10 @@ def deploy() {
 	sh "docker ps -f name=${containerName} -q | xargs --no-run-if-empty docker stop"
 	sh "docker ps -a -f name=${containerName} -q | xargs -r docker rm"
 	sh "docker run -d --name ${containerName} eaiesbhub/mule4-helloworld:${BUILD_NUMBER}"
+}
+def clouddeploy() {
+	dir ('.' ) {
+    sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean deploy'
+}
+        
 }
