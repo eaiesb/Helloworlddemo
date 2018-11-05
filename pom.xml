@@ -21,8 +21,12 @@
 	<build>
 		<plugins>
 			<plugin>
-                                <configuration>
-                                     <cloudHubDeployment>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+				    <cloudHubDeployment>
                                          <uri>https://anypoint.mulesoft.com</uri>
                                          <muleVersion>${mule.version}</muleVersion>
                                          <username>vijay_sangam</username>
@@ -33,15 +37,6 @@
                                          <key>value</key>
                                        </properties>
                                      </cloudHubDeployment>
-                                </configuration>
-
-                        </plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
 				</configuration>
 			</plugin>
 		</plugins>
