@@ -67,16 +67,7 @@
             <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
             <layout>default</layout>
         </repository>
-		<distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>cloudhub</id>
-      <name>cloud hub</name>
-      <url>https://anypoint.mulesoft.com/cloudhub/</url>
-      <layout>default</layout>
-    </repository>
-    
-</distributionManagement>
+		
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
