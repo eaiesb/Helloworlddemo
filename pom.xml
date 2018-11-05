@@ -23,7 +23,7 @@
 			<plugin>
                                 <configuration>
                                      <cloudHubDeployment>
-                                         uri>https://anypoint.mulesoft.com</uri>
+                                         <uri>https://anypoint.mulesoft.com</uri>
                                          <muleVersion>${mule.version}</muleVersion>
                                          <username>vijay_sangam</username>
                                          <password>Sangam@123</password>
