@@ -24,7 +24,7 @@ steps {
 }
 stage("Deploy") {
   steps { deploy() 
-	  slackSend (message: 'container deployed sucessfully')
+	  
 	}
 }
 }
