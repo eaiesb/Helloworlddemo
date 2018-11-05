@@ -27,11 +27,11 @@
 		    	<configuration>
 		    	<deploymentType>cloudhub</deploymentType> 
 		    	<muleVersion>4.1.4</muleVersion>
-		    	<username>vijay_reddy</username> 
+		    	<username>vijay_sangam</username> 
 		    	<password>Sangam@123</password>
 		    	<workerType>Micro</workerType> 
 		    	<redeploy>true</redeploy> 
-		    	<environment>Sandbox</environment>
+		    	<environment>SANDBOX</environment>
 		    	</configuration> 
 		    	<executions>
 		    		<execution>
