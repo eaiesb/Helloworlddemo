@@ -35,12 +35,12 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>2.0</version>
 				<extensions>true</extensions>
 				<configuration>
 				    <cloudHubDeployment>
                                          <uri>https://anypoint.mulesoft.com</uri>
-                                         <muleVersion>2.0uleVersion>
+                                         <muleVersion>2.0<muleVersion>
                                          <username>vijay_sangam</username>
                                          <password>Sangam@123</password>
                                          <applicationName>${cloudhub.application.name}</applicationName>
