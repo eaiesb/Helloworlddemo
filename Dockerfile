@@ -1,4 +1,4 @@
-FROM eaiesbhub/mule39ce:latest
+FROM eaiesbhub/mule4
 
 ARG MULE_HOME=/root/mule-enterprise-standalone-4.1.3.2
 
