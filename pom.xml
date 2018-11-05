@@ -25,9 +25,23 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
+		    	<configuration>
+		    	<deploymentType>cloudhub</deploymentType> 
+		    	<muleVersion>4.1.4</muleVersion>
+		    	<username>vijay_sangam</username> 
+		    	<password>Sangam@123</password>
+		    	<workerType>Micro</workerType> 
+		    	<redeploy>true</redeploy> 
+		    	<environment>SANDBOX</environment>
+		    	</configuration> 
+		    	<executions>
+		    		<execution>
+		     			<goals> 
+		        			<goal>deploy</goal>
+		      			</goals> 
+		     		</execution>
+		    	</executions> 
+		   	</plugin>
 		</plugins>
 	</build>
 
