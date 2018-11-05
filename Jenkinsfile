@@ -32,7 +32,7 @@ stage("Deploy") {
 // steps
 def buildsrc() {
 dir ('.' ) {
-    sh '/usr/maven/apache-maven-3.3.9/mvn clean install'
+    sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean install'
 }
 }
 def buildApp() {
