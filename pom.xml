@@ -21,7 +21,6 @@
 	<build>
 		<plugins>
 			<plugin>
-     ...
     <configuration>
         <cloudHubDeployment>
             <uri>https://anypoint.mulesoft.com</uri>
