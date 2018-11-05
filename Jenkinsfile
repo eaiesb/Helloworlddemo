@@ -19,7 +19,7 @@ stage('renaming the target zip file') {
 }  
 stage("Buildimg") {
 steps { 
-	slackSend (message: 'Building the image')
+#	slackSend (message: 'Building the image')
 	buildApp() }
 }
 stage("Deploy") {
