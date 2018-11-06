@@ -22,11 +22,6 @@ steps {
 	
 	buildApp() }
 }
-stage("Deploy") {
-  steps { deploy() 
-	  
-	}
-}
 stage("CloudDeploy") {
   steps { clouddeploy()
 	}
