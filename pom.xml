@@ -26,15 +26,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 		    	<configuration>
-		    	<deploymentType>cloudhub</deploymentType> 
-		    	<muleVersion>4.1.4</muleVersion>
-		    	<username>vijay_sangam</username> 
-		    	<password>Sangam@123</password>
-		    	<workerType>Micro</workerType> 
-		    	<redeploy>true</redeploy> 
-		    	<environment>SANDBOX</environment>
+                            <cloudHubDeployment>
+                                 <uri>https://anypoint.mulesoft.com</uri>
+                                 <muleVersion>${mule.version}</muleVersion>
+                                 <username>vijay_sangam</username>
+                                 <password>Sangam@123</password>
+                                 <applicationName>${cloudhub.application.name}</applicationName>
+                                 <environment>SANDBOX</environment>
+                                    <properties>
+                                         <key>value</key>
+                                    </properties>
+                            </cloudHubDeployment>
 		    	</configuration> 
-		    	<executions>
+		    	   <executions>
 		    		<execution>
 		     			<goals> 
 		        			<goal>deploy</goal>
