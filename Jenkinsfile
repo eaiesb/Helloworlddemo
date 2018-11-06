@@ -28,7 +28,6 @@ stage("CloudDeploy") {
          }
 }	
 }
-}
 // steps
 def buildsrc() {
 dir ('.' ) {
