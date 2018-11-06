@@ -16,31 +16,13 @@ stage('renaming the target zip file') {
     steps {
                sh 'mv target/helloworld-1.0.0-SNAPSHOT-mule-application.jar helloworld.jar'
     }
-}  
-stage("Buildimg") {
-steps { 
-	
-	buildApp() }
-}
-stage("CloudDeploy") {
-  steps { clouddeploy()
-	}
-}	
+}  	
 }
 }
 // steps
 def buildsrc() {
 dir ('.' ) {
-    sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean install'
-}
-}
-def buildApp() {
-dir ('' ) {
-def appImage = docker.build("eaiesbhub/mule-4:${BUILD_NUMBER}")
-}
-}
-def clouddeploy() {
-    dir ('.' ) {
     sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean package deploy'
-    }
-}	
+}
+}
+
