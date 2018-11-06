@@ -23,8 +23,8 @@ steps {
 	buildApp() }
 }
 }
-stage("CloudDeploy") {
-   steps { clouddeploy()
+stage("Deploy") {
+   steps { deploy()
          }
 }	
 }
@@ -39,7 +39,7 @@ dir ('' ) {
 def appImage = docker.build("eaiesbhub/mule4-helloworld:${BUILD_NUMBER}")
 }
 }
-def clouddeploy() {
+def deploy() {
 	dir ('.' ) {
     sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean deploy'
 }
