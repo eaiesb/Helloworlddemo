@@ -31,7 +31,7 @@
 						<muleVersion>4.1.4</muleVersion>
 						<username>vijay_sangam</username>
 						<password>Sangam@123</password>
-						<applicationName>HelloWorld-demo</applicationName>
+						<applicationName>mule4-HelloWorld-test</applicationName>
 						<environment>Sandbox</environment>
 					</cloudHubDeployment>
 				</configuration>
