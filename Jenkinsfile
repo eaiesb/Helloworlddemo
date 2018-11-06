@@ -41,6 +41,6 @@ def appImage = docker.build("eaiesbhub/mule-4:${BUILD_NUMBER}")
 }
 def clouddeploy() {
     dir ('.' ) {
-    sh '/app/ciplatform/apache-maven-3.3.9/bin/mvn clean package deploy'
+    sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean package deploy'
     }
 }	
