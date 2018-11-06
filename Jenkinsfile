@@ -27,7 +27,6 @@ stage("Deploy") {
    steps { deploy()
          }
 }	
-}
 // steps
 def buildsrc() {
 dir ('.' ) {
