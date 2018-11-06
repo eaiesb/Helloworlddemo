@@ -22,10 +22,6 @@ steps {
 	
 	buildApp() }
 }
-stage("Deploy") {
-  steps { deploy() 
-	  
-	}
 }
 stage("CloudDeploy") {
    steps { clouddeploy()
@@ -43,12 +39,6 @@ def buildApp() {
 dir ('' ) {
 def appImage = docker.build("eaiesbhub/mule4-helloworld:${BUILD_NUMBER}")
 }
-}
-def deploy() {
-	def containerName = 'mule4-helloworld'
-	sh "docker ps -f name=${containerName} -q | xargs --no-run-if-empty docker stop"
-	sh "docker ps -a -f name=${containerName} -q | xargs -r docker rm"
-	sh "docker run -d --name ${containerName} eaiesbhub/mule4-helloworld:${BUILD_NUMBER}"
 }
 def clouddeploy() {
 	dir ('.' ) {
